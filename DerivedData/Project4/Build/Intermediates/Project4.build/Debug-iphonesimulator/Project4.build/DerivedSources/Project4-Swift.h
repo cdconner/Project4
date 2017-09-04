@@ -134,6 +134,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
 @import WebKit;
+@import Foundation;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -154,6 +155,7 @@ SWIFT_CLASS("_TtC8Project411AppDelegate")
 @end
 
 @class WKWebView;
+@class UIProgressView;
 @class UIAlertAction;
 @class WKNavigation;
 @class NSBundle;
@@ -162,8 +164,10 @@ SWIFT_CLASS("_TtC8Project411AppDelegate")
 SWIFT_CLASS("_TtC8Project414ViewController")
 @interface ViewController : UIViewController <WKNavigationDelegate>
 @property (nonatomic, strong) WKWebView * _Null_unspecified webView;
+@property (nonatomic, strong) UIProgressView * _Null_unspecified progressView;
 - (void)loadView;
 - (void)viewDidLoad;
+- (void)observeValueForKeyPath:(NSString * _Nullable)keyPath ofObject:(id _Nullable)object change:(NSDictionary<NSKeyValueChangeKey, id> * _Nullable)change context:(void * _Nullable)context;
 - (void)openTapped;
 - (void)openPageWithAction:(UIAlertAction * _Nonnull)action;
 - (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
