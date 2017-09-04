@@ -154,6 +154,8 @@ SWIFT_CLASS("_TtC8Project411AppDelegate")
 @end
 
 @class WKWebView;
+@class UIAlertAction;
+@class WKNavigation;
 @class NSBundle;
 @class NSCoder;
 
@@ -162,6 +164,9 @@ SWIFT_CLASS("_TtC8Project414ViewController")
 @property (nonatomic, strong) WKWebView * _Null_unspecified webView;
 - (void)loadView;
 - (void)viewDidLoad;
+- (void)openTapped;
+- (void)openPageWithAction:(UIAlertAction * _Nonnull)action;
+- (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

@@ -22,7 +22,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = URL(string: "https://www.apple.com")!
+        let url = URL(string: "https://www.homeaway.com")!
         webView.load(URLRequest(url: url))
         webView.allowsBackForwardNavigationGestures = true
         
@@ -43,12 +43,15 @@ class ViewController: UIViewController, WKNavigationDelegate {
         let url = URL(string: "https://" + action.title!)!
         webView.load(URLRequest(url: url))
     }
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        title = webView.title
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 
