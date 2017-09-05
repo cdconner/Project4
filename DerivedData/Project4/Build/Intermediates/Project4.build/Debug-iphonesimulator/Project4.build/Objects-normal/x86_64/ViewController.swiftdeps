@@ -14,16 +14,18 @@ provides-dynamic-lookup:
 - "progressView"
 - "viewDidLoad"
 - "webView"
+- "websites"
 depends-top-level:
+- !private "!="
 - !private "+"
 - !private "=="
-- !private "Array"
+- "Array"
 - "AssignmentPrecedence"
 - !private "BooleanLiteralType"
 - !private "Float"
 - "NSKeyValueChangeKey"
 - "String"
-- !private "StringLiteralType"
+- "StringLiteralType"
 - "UIAlertAction"
 - !private "UIAlertController"
 - !private "UIBarButtonItem"
@@ -33,7 +35,10 @@ depends-top-level:
 - !private "URLRequest"
 - "UnsafeMutableRawPointer"
 - "ViewController"
+- "Void"
 - "WKNavigation"
+- "WKNavigationAction"
+- "WKNavigationActionPolicy"
 - "WKNavigationDelegate"
 - "WKWebView"
 depends-member:
@@ -51,7 +56,7 @@ depends-member:
 - !private ["Ps9AnyObject", "allowsBackForwardNavigationGestures"]
 - !private ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - ["Ps9AnyObject", "estimatedProgress"]
-- !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "isToolbarHidden"]
 - !private ["Ps9AnyObject", "load"]
 - !private ["Ps9AnyObject", "navigationController"]
@@ -62,7 +67,9 @@ depends-member:
 - !private ["Ps9AnyObject", "present"]
 - !private ["Ps9AnyObject", "progress"]
 - !private ["Ps9AnyObject", "progressView"]
+- !private ["Ps9AnyObject", "range"]
 - !private ["Ps9AnyObject", "reload"]
+- !private ["Ps9AnyObject", "request"]
 - !private ["Ps9AnyObject", "rightBarButtonItem"]
 - !private ["Ps9AnyObject", "sizeToFit"]
 - !private ["Ps9AnyObject", "title"]
@@ -71,7 +78,10 @@ depends-member:
 - !private ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", "webView"]
 - ["Ps9AnyObject", "webViewWebContentProcessDidTerminate"]
+- !private ["Ps9AnyObject", "websites"]
 - ["Ps9AnyObject", ""]
+- !private ["Sa", "subscript"]
+- !private ["Ps23BidirectionalCollection", "subscript"]
 - !private ["Ps19BinaryFloatingPoint", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["PSo15CALayerDelegate", "addObserver"]
@@ -97,7 +107,7 @@ depends-member:
 - !private ["Ps7CVarArg", "allowsBackForwardNavigationGestures"]
 - !private ["Ps7CVarArg", "didReceiveMemoryWarning"]
 - ["Ps7CVarArg", "estimatedProgress"]
-- !private ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "isToolbarHidden"]
 - !private ["Ps7CVarArg", "load"]
 - !private ["Ps7CVarArg", "navigationController"]
@@ -108,17 +118,23 @@ depends-member:
 - !private ["Ps7CVarArg", "present"]
 - !private ["Ps7CVarArg", "progress"]
 - !private ["Ps7CVarArg", "progressView"]
+- !private ["Ps7CVarArg", "range"]
 - !private ["Ps7CVarArg", "reload"]
+- !private ["Ps7CVarArg", "request"]
 - !private ["Ps7CVarArg", "rightBarButtonItem"]
 - !private ["Ps7CVarArg", "sizeToFit"]
+- !private ["Ps7CVarArg", "subscript"]
 - !private ["Ps7CVarArg", "title"]
 - !private ["Ps7CVarArg", "toolbarItems"]
 - !private ["Ps7CVarArg", "view"]
 - !private ["Ps7CVarArg", "viewDidLoad"]
 - ["Ps7CVarArg", "webView"]
 - ["Ps7CVarArg", "webViewWebContentProcessDidTerminate"]
+- !private ["Ps7CVarArg", "websites"]
 - ["Ps7CVarArg", ""]
-- !private ["Ps10Comparable", "init"]
+- !private ["Ps10Collection", "subscript"]
+- ["Ps10Comparable", "init"]
+- !private ["Ps10Comparable", "range"]
 - !private ["Ps28CustomDebugStringConvertible", "Float"]
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertAction"]
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertController"]
@@ -132,7 +148,8 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "allowsBackForwardNavigationGestures"]
 - !private ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - ["Ps28CustomDebugStringConvertible", "estimatedProgress"]
-- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "host"]
+- ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "isToolbarHidden"]
 - !private ["Ps28CustomDebugStringConvertible", "load"]
 - !private ["Ps28CustomDebugStringConvertible", "navigationController"]
@@ -143,20 +160,30 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "present"]
 - !private ["Ps28CustomDebugStringConvertible", "progress"]
 - !private ["Ps28CustomDebugStringConvertible", "progressView"]
+- !private ["Ps28CustomDebugStringConvertible", "range"]
 - !private ["Ps28CustomDebugStringConvertible", "reload"]
+- !private ["Ps28CustomDebugStringConvertible", "request"]
 - !private ["Ps28CustomDebugStringConvertible", "rightBarButtonItem"]
 - !private ["Ps28CustomDebugStringConvertible", "sizeToFit"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "title"]
 - !private ["Ps28CustomDebugStringConvertible", "toolbarItems"]
+- !private ["Ps28CustomDebugStringConvertible", "url"]
 - !private ["Ps28CustomDebugStringConvertible", "view"]
 - !private ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", "webView"]
 - ["Ps28CustomDebugStringConvertible", "webViewWebContentProcessDidTerminate"]
+- !private ["Ps28CustomDebugStringConvertible", "websites"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "host"]
+- ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "range"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
-- !private ["Ps17CustomReflectable", "init"]
+- ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "range"]
+- !private ["Ps17CustomReflectable", "subscript"]
+- !private ["Ps17CustomReflectable", "url"]
 - !private ["Ps23CustomStringConvertible", "Float"]
 - !private ["Ps23CustomStringConvertible", "UIAlertAction"]
 - !private ["Ps23CustomStringConvertible", "UIAlertController"]
@@ -171,7 +198,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "allowsBackForwardNavigationGestures"]
 - !private ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - ["Ps23CustomStringConvertible", "estimatedProgress"]
-- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "host"]
+- ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "isToolbarHidden"]
 - !private ["Ps23CustomStringConvertible", "load"]
 - !private ["Ps23CustomStringConvertible", "navigationController"]
@@ -182,15 +210,20 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "present"]
 - !private ["Ps23CustomStringConvertible", "progress"]
 - !private ["Ps23CustomStringConvertible", "progressView"]
+- !private ["Ps23CustomStringConvertible", "range"]
 - !private ["Ps23CustomStringConvertible", "reload"]
+- !private ["Ps23CustomStringConvertible", "request"]
 - !private ["Ps23CustomStringConvertible", "rightBarButtonItem"]
 - !private ["Ps23CustomStringConvertible", "sizeToFit"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
 - !private ["Ps23CustomStringConvertible", "title"]
 - !private ["Ps23CustomStringConvertible", "toolbarItems"]
+- !private ["Ps23CustomStringConvertible", "url"]
 - !private ["Ps23CustomStringConvertible", "view"]
 - !private ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", "webView"]
 - ["Ps23CustomStringConvertible", "webViewWebContentProcessDidTerminate"]
+- !private ["Ps23CustomStringConvertible", "websites"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Ps9Equatable", "Float"]
 - !private ["Ps9Equatable", "UIAlertAction"]
@@ -204,13 +237,15 @@ depends-member:
 - !private ["Ps9Equatable", "actionSheet"]
 - !private ["Ps9Equatable", "addAction"]
 - !private ["Ps9Equatable", "addObserver"]
+- !private ["Ps9Equatable", "allow"]
 - !private ["Ps9Equatable", "allowsBackForwardNavigationGestures"]
 - !private ["Ps9Equatable", "cancel"]
 - !private ["Ps9Equatable", "default"]
 - !private ["Ps9Equatable", "didReceiveMemoryWarning"]
 - ["Ps9Equatable", "estimatedProgress"]
 - !private ["Ps9Equatable", "flexibleSpace"]
-- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "host"]
+- ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "isToolbarHidden"]
 - !private ["Ps9Equatable", "load"]
 - !private ["Ps9Equatable", "navigationController"]
@@ -223,24 +258,32 @@ depends-member:
 - !private ["Ps9Equatable", "present"]
 - !private ["Ps9Equatable", "progress"]
 - !private ["Ps9Equatable", "progressView"]
+- !private ["Ps9Equatable", "range"]
 - !private ["Ps9Equatable", "refresh"]
 - !private ["Ps9Equatable", "reload"]
+- !private ["Ps9Equatable", "request"]
 - !private ["Ps9Equatable", "rightBarButtonItem"]
 - !private ["Ps9Equatable", "sizeToFit"]
 - !private ["Ps9Equatable", "title"]
 - !private ["Ps9Equatable", "toolbarItems"]
+- !private ["Ps9Equatable", "url"]
 - !private ["Ps9Equatable", "view"]
 - !private ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", "webView"]
 - ["Ps9Equatable", "webViewWebContentProcessDidTerminate"]
+- !private ["Ps9Equatable", "websites"]
 - ["Ps9Equatable", ""]
 - !private ["Ps25ExpressibleByArrayLiteral", "new"]
+- !private ["Ps25ExpressibleByArrayLiteral", "subscript"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
-- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "range"]
 - !private ["Ps25ExpressibleByFloatLiteral", "init"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "init"]
-- !private ["Ps26ExpressibleByStringLiteral", "init"]
-- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "range"]
+- ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "range"]
 - !private ["Sf", "init"]
 - !private ["Ps13FloatingPoint", "init"]
 - !private ["Ps8Hashable", "Float"]
@@ -255,13 +298,15 @@ depends-member:
 - !private ["Ps8Hashable", "actionSheet"]
 - !private ["Ps8Hashable", "addAction"]
 - !private ["Ps8Hashable", "addObserver"]
+- !private ["Ps8Hashable", "allow"]
 - !private ["Ps8Hashable", "allowsBackForwardNavigationGestures"]
 - !private ["Ps8Hashable", "cancel"]
 - !private ["Ps8Hashable", "default"]
 - !private ["Ps8Hashable", "didReceiveMemoryWarning"]
 - ["Ps8Hashable", "estimatedProgress"]
 - !private ["Ps8Hashable", "flexibleSpace"]
-- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "host"]
+- ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "isToolbarHidden"]
 - !private ["Ps8Hashable", "load"]
 - !private ["Ps8Hashable", "navigationController"]
@@ -273,20 +318,27 @@ depends-member:
 - !private ["Ps8Hashable", "present"]
 - !private ["Ps8Hashable", "progress"]
 - !private ["Ps8Hashable", "progressView"]
+- !private ["Ps8Hashable", "range"]
 - !private ["Ps8Hashable", "refresh"]
 - !private ["Ps8Hashable", "reload"]
+- !private ["Ps8Hashable", "request"]
 - !private ["Ps8Hashable", "rightBarButtonItem"]
 - !private ["Ps8Hashable", "sizeToFit"]
 - !private ["Ps8Hashable", "title"]
 - !private ["Ps8Hashable", "toolbarItems"]
+- !private ["Ps8Hashable", "url"]
 - !private ["Ps8Hashable", "view"]
 - !private ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", "webView"]
 - ["Ps8Hashable", "webViewWebContentProcessDidTerminate"]
+- !private ["Ps8Hashable", "websites"]
 - ["Ps8Hashable", ""]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
-- !private ["Ps25LosslessStringConvertible", "init"]
-- !private ["Ps10MirrorPath", "init"]
+- ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps25LosslessStringConvertible", "range"]
+- ["Ps10MirrorPath", "init"]
+- !private ["Ps10MirrorPath", "range"]
+- !private ["Ps17MutableCollection", "subscript"]
 - !private ["PSo8NSCoding", "Float"]
 - !private ["PSo8NSCoding", "UIAlertAction"]
 - !private ["PSo8NSCoding", "UIAlertController"]
@@ -300,7 +352,7 @@ depends-member:
 - !private ["PSo8NSCoding", "allowsBackForwardNavigationGestures"]
 - !private ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - ["PSo8NSCoding", "estimatedProgress"]
-- !private ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "isToolbarHidden"]
 - !private ["PSo8NSCoding", "load"]
 - !private ["PSo8NSCoding", "navigationController"]
@@ -311,6 +363,7 @@ depends-member:
 - !private ["PSo8NSCoding", "present"]
 - !private ["PSo8NSCoding", "progress"]
 - !private ["PSo8NSCoding", "progressView"]
+- !private ["PSo8NSCoding", "range"]
 - !private ["PSo8NSCoding", "reload"]
 - !private ["PSo8NSCoding", "rightBarButtonItem"]
 - !private ["PSo8NSCoding", "sizeToFit"]
@@ -320,8 +373,10 @@ depends-member:
 - !private ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "webView"]
 - ["PSo8NSCoding", "webViewWebContentProcessDidTerminate"]
+- !private ["PSo8NSCoding", "websites"]
 - ["PSo8NSCoding", ""]
-- !private ["PSo9NSCopying", "init"]
+- ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "range"]
 - !private ["PSo9NSCopying", "title"]
 - !private ["PSo26NSExtensionRequestHandling", "Float"]
 - !private ["PSo26NSExtensionRequestHandling", "UIAlertAction"]
@@ -347,9 +402,11 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "webView"]
 - ["PSo26NSExtensionRequestHandling", "webViewWebContentProcessDidTerminate"]
+- !private ["PSo26NSExtensionRequestHandling", "websites"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["VSC26NSKeyValueObservingOptions", "new"]
-- !private ["PSo16NSMutableCopying", "init"]
+- ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "range"]
 - !private ["CSo8NSObject", "Float"]
 - ["CSo8NSObject", "NSKeyValueChangeKey"]
 - ["CSo8NSObject", "String"]
@@ -360,7 +417,10 @@ depends-member:
 - !private ["CSo8NSObject", "URL"]
 - !private ["CSo8NSObject", "URLRequest"]
 - ["CSo8NSObject", "UnsafeMutableRawPointer"]
+- ["CSo8NSObject", "Void"]
 - ["CSo8NSObject", "WKNavigation"]
+- ["CSo8NSObject", "WKNavigationAction"]
+- ["CSo8NSObject", "WKNavigationActionPolicy"]
 - ["CSo8NSObject", "WKWebView"]
 - !private ["CSo8NSObject", "addAction"]
 - !private ["CSo8NSObject", "addObserver"]
@@ -380,7 +440,9 @@ depends-member:
 - !private ["CSo8NSObject", "present"]
 - !private ["CSo8NSObject", "progress"]
 - ["CSo8NSObject", "progressView"]
+- !private ["CSo8NSObject", "range"]
 - !private ["CSo8NSObject", "reload"]
+- !private ["CSo8NSObject", "request"]
 - !private ["CSo8NSObject", "rightBarButtonItem"]
 - !private ["CSo8NSObject", "sizeToFit"]
 - !private ["CSo8NSObject", "title"]
@@ -389,6 +451,7 @@ depends-member:
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "webView"]
 - ["CSo8NSObject", "webViewWebContentProcessDidTerminate"]
+- ["CSo8NSObject", "websites"]
 - !private ["PSo16NSObjectProtocol", "Float"]
 - !private ["PSo16NSObjectProtocol", "UIAlertAction"]
 - !private ["PSo16NSObjectProtocol", "UIAlertController"]
@@ -402,7 +465,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "allowsBackForwardNavigationGestures"]
 - !private ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - ["PSo16NSObjectProtocol", "estimatedProgress"]
-- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "isToolbarHidden"]
 - !private ["PSo16NSObjectProtocol", "load"]
 - !private ["PSo16NSObjectProtocol", "navigationController"]
@@ -413,7 +476,9 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "present"]
 - !private ["PSo16NSObjectProtocol", "progress"]
 - !private ["PSo16NSObjectProtocol", "progressView"]
+- !private ["PSo16NSObjectProtocol", "range"]
 - !private ["PSo16NSObjectProtocol", "reload"]
+- !private ["PSo16NSObjectProtocol", "request"]
 - !private ["PSo16NSObjectProtocol", "rightBarButtonItem"]
 - !private ["PSo16NSObjectProtocol", "sizeToFit"]
 - !private ["PSo16NSObjectProtocol", "title"]
@@ -422,24 +487,36 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "webView"]
 - ["PSo16NSObjectProtocol", "webViewWebContentProcessDidTerminate"]
+- !private ["PSo16NSObjectProtocol", "websites"]
 - ["PSo16NSObjectProtocol", ""]
-- !private ["PSo14NSSecureCoding", "init"]
-- !private ["CSo8NSString", "init"]
+- ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "range"]
+- ["CSo8NSString", "init"]
+- !private ["CSo8NSString", "range"]
 - !private ["Ps9OptionSet", "new"]
+- !private ["Ps22RandomAccessCollection", "subscript"]
+- !private ["Ps26RangeReplaceableCollection", "subscript"]
 - !private ["Ps16RawRepresentable", "actionSheet"]
+- !private ["Ps16RawRepresentable", "allow"]
 - !private ["Ps16RawRepresentable", "cancel"]
 - !private ["Ps16RawRepresentable", "default"]
 - !private ["Ps16RawRepresentable", "flexibleSpace"]
 - !private ["Ps16RawRepresentable", "new"]
 - !private ["Ps16RawRepresentable", "plain"]
 - !private ["Ps16RawRepresentable", "refresh"]
+- !private ["P10Foundation20ReferenceConvertible", "host"]
 - !private ["P10Foundation20ReferenceConvertible", "init"]
+- !private ["P10Foundation20ReferenceConvertible", "url"]
+- !private ["Ps8Sequence", "subscript"]
 - !private ["Ps10SetAlgebra", "new"]
 - !private ["Ps12SignedNumber", "init"]
 - !private ["Ps10Strideable", "init"]
-- !private ["SS", "init"]
-- !private ["Ps16TextOutputStream", "init"]
-- !private ["Ps20TextOutputStreamable", "init"]
+- ["SS", "init"]
+- !private ["SS", "range"]
+- ["Ps16TextOutputStream", "init"]
+- !private ["Ps16TextOutputStream", "range"]
+- ["Ps20TextOutputStreamable", "init"]
+- !private ["Ps20TextOutputStreamable", "range"]
 - !private ["PSo29UIAccessibilityIdentification", "addObserver"]
 - !private ["PSo29UIAccessibilityIdentification", "allowsBackForwardNavigationGestures"]
 - ["PSo29UIAccessibilityIdentification", "estimatedProgress"]
@@ -499,6 +576,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "webView"]
 - ["PSo21UIAppearanceContainer", "webViewWebContentProcessDidTerminate"]
+- !private ["PSo21UIAppearanceContainer", "websites"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["CSo15UIBarButtonItem", "init"]
 - !private ["OSC20UIBarButtonItemStyle", "plain"]
@@ -529,6 +607,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "webView"]
 - ["PSo18UIContentContainer", "webViewWebContentProcessDidTerminate"]
+- !private ["PSo18UIContentContainer", "websites"]
 - ["PSo18UIContentContainer", ""]
 - !private ["PSo17UICoordinateSpace", "addObserver"]
 - !private ["PSo17UICoordinateSpace", "allowsBackForwardNavigationGestures"]
@@ -582,6 +661,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "webView"]
 - ["PSo18UIFocusEnvironment", "webViewWebContentProcessDidTerminate"]
+- !private ["PSo18UIFocusEnvironment", "websites"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "addObserver"]
 - !private ["PSo11UIFocusItem", "allowsBackForwardNavigationGestures"]
@@ -609,7 +689,10 @@ depends-member:
 - !private ["CSo11UIResponder", "URL"]
 - !private ["CSo11UIResponder", "URLRequest"]
 - ["CSo11UIResponder", "UnsafeMutableRawPointer"]
+- ["CSo11UIResponder", "Void"]
 - ["CSo11UIResponder", "WKNavigation"]
+- ["CSo11UIResponder", "WKNavigationAction"]
+- ["CSo11UIResponder", "WKNavigationActionPolicy"]
 - ["CSo11UIResponder", "WKWebView"]
 - !private ["CSo11UIResponder", "addAction"]
 - !private ["CSo11UIResponder", "addObserver"]
@@ -637,6 +720,7 @@ depends-member:
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "webView"]
 - ["CSo11UIResponder", "webViewWebContentProcessDidTerminate"]
+- ["CSo11UIResponder", "websites"]
 - !private ["PSo30UIResponderStandardEditActions", "Float"]
 - !private ["PSo30UIResponderStandardEditActions", "UIAlertAction"]
 - !private ["PSo30UIResponderStandardEditActions", "UIAlertController"]
@@ -669,6 +753,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", "webView"]
 - ["PSo30UIResponderStandardEditActions", "webViewWebContentProcessDidTerminate"]
+- !private ["PSo30UIResponderStandardEditActions", "websites"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["PSo16UIStateRestoring", "Float"]
 - !private ["PSo16UIStateRestoring", "UIAlertAction"]
@@ -694,6 +779,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "webView"]
 - ["PSo16UIStateRestoring", "webViewWebContentProcessDidTerminate"]
+- !private ["PSo16UIStateRestoring", "websites"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["PSo18UITraitEnvironment", "Float"]
 - !private ["PSo18UITraitEnvironment", "UIAlertAction"]
@@ -727,6 +813,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "webView"]
 - ["PSo18UITraitEnvironment", "webViewWebContentProcessDidTerminate"]
+- !private ["PSo18UITraitEnvironment", "websites"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "addObserver"]
 - !private ["CSo6UIView", "allowsBackForwardNavigationGestures"]
@@ -748,7 +835,10 @@ depends-member:
 - !private ["CSo16UIViewController", "URL"]
 - !private ["CSo16UIViewController", "URLRequest"]
 - ["CSo16UIViewController", "UnsafeMutableRawPointer"]
+- ["CSo16UIViewController", "Void"]
 - ["CSo16UIViewController", "WKNavigation"]
+- ["CSo16UIViewController", "WKNavigationAction"]
+- ["CSo16UIViewController", "WKNavigationActionPolicy"]
 - ["CSo16UIViewController", "WKWebView"]
 - !private ["CSo16UIViewController", "addAction"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
@@ -768,9 +858,12 @@ depends-member:
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "webView"]
 - ["CSo16UIViewController", "webViewWebContentProcessDidTerminate"]
+- ["CSo16UIViewController", "websites"]
 - ["CSo16UIViewController", ""]
+- !private ["V10Foundation3URL", "host"]
 - !private ["V10Foundation3URL", "init"]
 - !private ["V10Foundation10URLRequest", "init"]
+- !private ["V10Foundation10URLRequest", "url"]
 - !private ["C8Project414ViewController", "Float"]
 - ["C8Project414ViewController", "NSKeyValueChangeKey"]
 - ["C8Project414ViewController", "String"]
@@ -781,7 +874,10 @@ depends-member:
 - !private ["C8Project414ViewController", "URL"]
 - !private ["C8Project414ViewController", "URLRequest"]
 - ["C8Project414ViewController", "UnsafeMutableRawPointer"]
+- ["C8Project414ViewController", "Void"]
 - ["C8Project414ViewController", "WKNavigation"]
+- ["C8Project414ViewController", "WKNavigationAction"]
+- ["C8Project414ViewController", "WKNavigationActionPolicy"]
 - ["C8Project414ViewController", "WKWebView"]
 - ["C8Project414ViewController", "deinit"]
 - ["C8Project414ViewController", "didReceiveMemoryWarning"]
@@ -800,6 +896,10 @@ depends-member:
 - ["C8Project414ViewController", "viewDidLoad"]
 - ["C8Project414ViewController", "webView"]
 - ["C8Project414ViewController", "webViewWebContentProcessDidTerminate"]
+- ["C8Project414ViewController", "websites"]
+- !private ["CSo18WKNavigationAction", "request"]
+- !private ["OSC24WKNavigationActionPolicy", "allow"]
+- !private ["OSC24WKNavigationActionPolicy", "cancel"]
 - !private ["PSo20WKNavigationDelegate", "Float"]
 - !private ["PSo20WKNavigationDelegate", "UIAlertAction"]
 - !private ["PSo20WKNavigationDelegate", "UIAlertController"]
@@ -819,6 +919,7 @@ depends-member:
 - !private ["PSo20WKNavigationDelegate", "view"]
 - ["PSo20WKNavigationDelegate", "webView"]
 - ["PSo20WKNavigationDelegate", "webViewWebContentProcessDidTerminate"]
+- !private ["PSo20WKNavigationDelegate", "websites"]
 - ["PSo20WKNavigationDelegate", ""]
 - !private ["CSo9WKWebView", "addObserver"]
 - !private ["CSo9WKWebView", "allowsBackForwardNavigationGestures"]
@@ -828,6 +929,8 @@ depends-member:
 - !private ["CSo9WKWebView", "navigationDelegate"]
 - !private ["CSo9WKWebView", "reload"]
 - !private ["CSo9WKWebView", "title"]
+- !private ["Ps14_ArrayProtocol", "subscript"]
+- !private ["Ps23_BidirectionalIndexable", "subscript"]
 - !private ["Ps15_CVarArgAligned", "init"]
 - !private ["Ps22_CVarArgPassedAsDouble", "init"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addObserver"]
@@ -840,16 +943,24 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "reload"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "sizeToFit"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "title"]
+- !private ["Ps24_DestructorSafeContainer", "subscript"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
-- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "range"]
 - !private ["Ps33_ExpressibleByBuiltinFloatLiteral", "init"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
-- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
-- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
-- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "range"]
+- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "range"]
+- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "range"]
+- !private ["Ps34_ExpressibleByFileReferenceLiteral", "host"]
 - !private ["Ps34_ExpressibleByFileReferenceLiteral", "init"]
-- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
-- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "range"]
+- ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "range"]
 - !private ["Ps9_Hashable", "Float"]
 - !private ["Ps9_Hashable", "UIAlertAction"]
 - !private ["Ps9_Hashable", "UIAlertController"]
@@ -862,13 +973,15 @@ depends-member:
 - !private ["Ps9_Hashable", "actionSheet"]
 - !private ["Ps9_Hashable", "addAction"]
 - !private ["Ps9_Hashable", "addObserver"]
+- !private ["Ps9_Hashable", "allow"]
 - !private ["Ps9_Hashable", "allowsBackForwardNavigationGestures"]
 - !private ["Ps9_Hashable", "cancel"]
 - !private ["Ps9_Hashable", "default"]
 - !private ["Ps9_Hashable", "didReceiveMemoryWarning"]
 - ["Ps9_Hashable", "estimatedProgress"]
 - !private ["Ps9_Hashable", "flexibleSpace"]
-- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "host"]
+- ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "isToolbarHidden"]
 - !private ["Ps9_Hashable", "load"]
 - !private ["Ps9_Hashable", "navigationController"]
@@ -880,63 +993,83 @@ depends-member:
 - !private ["Ps9_Hashable", "present"]
 - !private ["Ps9_Hashable", "progress"]
 - !private ["Ps9_Hashable", "progressView"]
+- !private ["Ps9_Hashable", "range"]
 - !private ["Ps9_Hashable", "refresh"]
 - !private ["Ps9_Hashable", "reload"]
+- !private ["Ps9_Hashable", "request"]
 - !private ["Ps9_Hashable", "rightBarButtonItem"]
 - !private ["Ps9_Hashable", "sizeToFit"]
 - !private ["Ps9_Hashable", "title"]
 - !private ["Ps9_Hashable", "toolbarItems"]
+- !private ["Ps9_Hashable", "url"]
 - !private ["Ps9_Hashable", "view"]
 - !private ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", "webView"]
 - ["Ps9_Hashable", "webViewWebContentProcessDidTerminate"]
+- !private ["Ps9_Hashable", "websites"]
 - ["Ps9_Hashable", ""]
+- !private ["Ps10_Indexable", "subscript"]
+- !private ["Ps14_IndexableBase", "subscript"]
+- !private ["Ps17_MutableIndexable", "subscript"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
-- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "host"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "range"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Ps21_ObjectiveCBridgeable", "url"]
+- !private ["Ps22_RandomAccessIndexable", "subscript"]
+- !private ["Ps26_RangeReplaceableIndexable", "subscript"]
 - !private ["Ps11_Strideable", "init"]
 depends-nominal:
 - !private "Ps16AbsoluteValuable"
 - "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23BidirectionalCollection"
 - !private "Ps19BinaryFloatingPoint"
 - !private "Sb"
 - "PSo15CALayerDelegate"
 - "Ps7CVarArg"
-- !private "Ps10Comparable"
+- !private "Ps10Collection"
+- "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
-- !private "Ps29CustomPlaygroundQuickLookable"
-- !private "Ps17CustomReflectable"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
 - !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
-- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps25ExpressibleByFloatLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
-- !private "Ps26ExpressibleByStringLiteral"
-- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps26ExpressibleByStringLiteral"
+- "Ps33ExpressibleByUnicodeScalarLiteral"
 - !private "Sf"
 - !private "Ps13FloatingPoint"
 - "Ps8Hashable"
-- !private "Ps25LosslessStringConvertible"
-- !private "Ps10MirrorPath"
+- "Ps25LosslessStringConvertible"
+- "Ps10MirrorPath"
+- !private "Ps17MutableCollection"
 - "PSo8NSCoding"
-- !private "PSo9NSCopying"
+- "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
 - !private "VSC26NSKeyValueObservingOptions"
-- !private "PSo16NSMutableCopying"
+- "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
-- !private "PSo14NSSecureCoding"
-- !private "CSo8NSString"
+- "PSo14NSSecureCoding"
+- "CSo8NSString"
 - !private "Ps9OptionSet"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps26RangeReplaceableCollection"
 - !private "Ps16RawRepresentable"
 - !private "P10Foundation20ReferenceConvertible"
+- !private "Ps8Sequence"
 - !private "Ps10SetAlgebra"
 - !private "Ps12SignedNumber"
 - !private "Ps10Strideable"
-- !private "SS"
-- !private "Ps16TextOutputStream"
-- !private "Ps20TextOutputStreamable"
+- "SS"
+- "Ps16TextOutputStream"
+- "Ps20TextOutputStreamable"
 - "PSo29UIAccessibilityIdentification"
 - !private "CSo13UIAlertAction"
 - !private "OSC18UIAlertActionStyle"
@@ -966,23 +1099,33 @@ depends-nominal:
 - !private "V10Foundation3URL"
 - !private "V10Foundation10URLRequest"
 - "C8Project414ViewController"
+- !private "CSo18WKNavigationAction"
+- !private "OSC24WKNavigationActionPolicy"
 - "PSo20WKNavigationDelegate"
 - "CSo9WKWebView"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps23_BidirectionalIndexable"
 - !private "Ps15_CVarArgAligned"
 - !private "Ps22_CVarArgPassedAsDouble"
 - "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps24_DestructorSafeContainer"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
-- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - !private "Ps33_ExpressibleByBuiltinFloatLiteral"
 - !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
-- !private "Ps34_ExpressibleByBuiltinStringLiteral"
-- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
-- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps34_ExpressibleByBuiltinStringLiteral"
+- "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
 - !private "Ps34_ExpressibleByFileReferenceLiteral"
-- !private "Ps33_ExpressibleByStringInterpolation"
-- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps33_ExpressibleByStringInterpolation"
+- "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
-- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps10_Indexable"
+- !private "Ps14_IndexableBase"
+- !private "Ps17_MutableIndexable"
+- "Ps21_ObjectiveCBridgeable"
+- !private "Ps22_RandomAccessIndexable"
+- !private "Ps26_RangeReplaceableIndexable"
 - !private "Ps11_Strideable"
 depends-dynamic-lookup:
 depends-external:
@@ -1003,4 +1146,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "1fb0e749632078a98f67d3349f471e66"
+interface-hash: "d94bc49532d78a6e562d9481c82a38e0"

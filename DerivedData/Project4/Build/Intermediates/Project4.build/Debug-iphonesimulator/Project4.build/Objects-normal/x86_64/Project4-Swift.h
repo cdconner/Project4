@@ -158,6 +158,7 @@ SWIFT_CLASS("_TtC8Project411AppDelegate")
 @class UIProgressView;
 @class UIAlertAction;
 @class WKNavigation;
+@class WKNavigationAction;
 @class NSBundle;
 @class NSCoder;
 
@@ -165,12 +166,14 @@ SWIFT_CLASS("_TtC8Project414ViewController")
 @interface ViewController : UIViewController <WKNavigationDelegate>
 @property (nonatomic, strong) WKWebView * _Null_unspecified webView;
 @property (nonatomic, strong) UIProgressView * _Null_unspecified progressView;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull websites;
 - (void)loadView;
 - (void)viewDidLoad;
 - (void)observeValueForKeyPath:(NSString * _Nullable)keyPath ofObject:(id _Nullable)object change:(NSDictionary<NSKeyValueChangeKey, id> * _Nullable)change context:(void * _Nullable)context;
 - (void)openTapped;
 - (void)openPageWithAction:(UIAlertAction * _Nonnull)action;
 - (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
+- (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationAction:(WKNavigationAction * _Nonnull)navigationAction decisionHandler:(void (^ _Nonnull)(WKNavigationActionPolicy))decisionHandler;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
